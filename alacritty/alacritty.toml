@@ -1,0 +1,15 @@
+# themes from https://github.com/alacritty/alacritty-theme
+import = ["~/dotfiles/alacritty/gruvbox_dark.toml"]
+
+[font]
+size = 20
+
+[font.normal]
+family = "UbuntuMono Nerd Font Mono"
+
+[window]
+decorations = "Full"
+
+[window.padding]
+x = 7
+y = 0
