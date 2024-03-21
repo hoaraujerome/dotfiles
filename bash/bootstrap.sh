@@ -2,6 +2,8 @@
 
 set -e
 
+brew install kubernetes-cli
+
 cp ~/dotfiles/bash/.bash_profile ~/
 cp ~/dotfiles/bash/.bashrc ~/
 
