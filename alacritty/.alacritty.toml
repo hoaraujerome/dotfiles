@@ -1,6 +1,7 @@
 # themes from https://github.com/alacritty/alacritty-theme
-import = ["~/dotfiles/alacritty/gruvbox_dark.toml"]
+import = ["~/dotfiles/alacritty/custom_argonaut.toml"]
 
+# https://alacritty.org/config-alacritty.html
 [font]
 size = 20
 
@@ -8,6 +9,7 @@ size = 20
 family = "UbuntuMono Nerd Font Mono"
 
 [window]
+startup_mode = "Fullscreen"
 decorations = "Full"
 
 [window.padding]
