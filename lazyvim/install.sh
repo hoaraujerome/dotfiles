@@ -27,3 +27,10 @@ rm -rf ~/.config/nvim/.git
 # It is recommended to run :LazyHealth after installation.
 # This will load all plugins and check if everything is working correctly.
 ##############
+
+##############
+# Extra Plugins
+# Add Markdown in lua/config/lazy.lua:
+# -- import any extras modules here
+# { import = "lazyvim.plugins.extras.lang.markdown" },
+##############
