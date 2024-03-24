@@ -2,6 +2,7 @@
 export VISUAL=nvim
 export EDITOR=nvim
 export SECOND_BRAIN="$HOME/Library/Mobile Documents/iCloud~md~obsidian/Documents/secondbrain"
+export HOMEBREW_NO_AUTO_UPDATE=1
 
 ## ALIASES
 # Misc.
@@ -24,6 +25,3 @@ get_kube_namespace() {
 }
 
 PS1="\[\033[01;34m\]\w\[\033[00m\] \[\033[01;32m\]\$(get_kube_context) \$(get_kube_namespace)\[\033[00m\] \[\033[01;31m\]>\[\033[00m\] "
-
-## HOMEBREW
-HOMEBREW_NO_AUTO_UPDATE=1
