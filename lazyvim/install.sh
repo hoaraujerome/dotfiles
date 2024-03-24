@@ -18,19 +18,9 @@ brew install fd
 ##############
 # Installation
 ##############
-git clone https://github.com/LazyVim/starter ~/.config/nvim
+mv ~/.config/nvim{,.bak}
+cp -R ~/dotfiles/lazyvim/nvim ~/.config
 
-rm -rf ~/.config/nvim/.git
-
-##############
-# Start neovim with nvim
-# It is recommended to run :LazyHealth after installation.
-# This will load all plugins and check if everything is working correctly.
-##############
-
-##############
-# Extra Plugins
-# Add Markdown in lua/config/lazy.lua:
-# -- import any extras modules here
-# { import = "lazyvim.plugins.extras.lang.markdown" },
-##############
+echo "Installation done."
+echo "It is recommended to run :LazyHealth after installation."
+echo "This will load all plugins and check if everything is working correctly."
