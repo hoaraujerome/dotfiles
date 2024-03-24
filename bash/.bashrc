@@ -1,11 +1,13 @@
 ## ENVVARS
 export VISUAL=nvim
 export EDITOR=nvim
+export SECOND_BRAIN="$HOME/Library/Mobile Documents/iCloud~md~obsidian/Documents/secondbrain"
 
 ## ALIASES
 # Misc.
 alias t='tmux'
 alias v='nvim'
+alias sb='cd "$SECOND_BRAIN"'
 
 # ls
 alias ls='ls --color=auto'
