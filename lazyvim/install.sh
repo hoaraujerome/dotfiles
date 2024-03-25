@@ -8,6 +8,9 @@ set -e
 brew install neovim
 brew install jesseduffield/lazygit/lazygit
 
+# LazyHealth
+brew install gnu-sed
+
 # https://github.com/nvim-treesitter/nvim-treesitter?tab=readme-ov-file#requirements
 gcc --version
 
@@ -18,6 +21,7 @@ brew install fd
 ##############
 # Installation
 ##############
+rm -Rf ~/.config/nvim.bak || true
 mv ~/.config/nvim{,.bak}
 cp -R ~/dotfiles/lazyvim/nvim ~/.config
 
