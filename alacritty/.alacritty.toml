@@ -3,10 +3,10 @@ import = ["~/dotfiles/alacritty/custom_argonaut.toml"]
 
 # https://alacritty.org/config-alacritty.html
 [font]
-size = 20
+size = 17
 
 [font.normal]
-family = "UbuntuMono Nerd Font Mono"
+family = "FiraCode Nerd Font Mono"
 
 [window]
 startup_mode = "Fullscreen"
