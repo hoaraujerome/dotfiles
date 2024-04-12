@@ -19,5 +19,8 @@ alias sb='cd "$SECOND_BRAIN"'
 alias sbc='$SCRIPTS/createnote.sh coding'
 alias sbo='$SCRIPTS/createnote.sh other'
 
+# pomodoro
+alias pomo='~/.local/bin/pomo'
+
 ## PROMPT
 eval "$(starship init bash)"
