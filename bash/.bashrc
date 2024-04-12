@@ -22,5 +22,8 @@ alias sbo='$SCRIPTS/createnote.sh other'
 # pomodoro
 alias pomo='~/.local/bin/pomo'
 
+# kubectl
+alias k='kubectl'
+
 ## PROMPT
 eval "$(starship init bash)"
