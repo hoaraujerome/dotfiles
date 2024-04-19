@@ -21,6 +21,8 @@ alias sbo='$SCRIPTS/createnote.sh other'
 
 # pomodoro
 alias pomo='~/.local/bin/pomo'
+alias pos='pomo start'
+alias poe='pomo stop'
 
 # kubectl
 alias k='kubectl'
