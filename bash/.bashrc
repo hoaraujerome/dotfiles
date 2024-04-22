@@ -21,11 +21,25 @@ alias sbo='$SCRIPTS/createnote.sh other'
 
 # pomodoro
 alias pomo='~/.local/bin/pomo'
-alias pos='pomo start'
-alias poe='pomo stop'
 
 # kubectl
 alias k='kubectl'
+
+## Functions
+# slack status updater
+lu() {
+	bash $SCRIPTS/slack_status_updater.sh lunch "$1"
+}
+
+fo() {
+	pomo start "$1m"
+	bash $SCRIPTS/slack_status_updater.sh focus "$1"
+}
+
+av() {
+	pomo stop
+	bash $SCRIPTS/slack_status_updater.sh available
+}
 
 ## PROMPT
 eval "$(starship init bash)"
