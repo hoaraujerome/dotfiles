@@ -9,8 +9,9 @@ set -e
 
 CREDENTIALS_FILE="$HOME/.slack/credentials"
 TOKEN=""
-USER_PROFILE_ENDPOINT="https://slack.com/api/users.profile.set"
-DO_NOT_DISTURB_ENDPOINT="https://slack.com/api/dnd.setSnooze"
+SLACK_API_URL="https://slack.com/api"
+SLACK_USER_PROFILE_ENDPOINT="/users.profile.set"
+SLACK_DO_NOT_DISTURB_ENDPOINT="/dnd.setSnooze"
 EMOJI_FOCUS=":focus:"
 TEXT_FOCUS="Focus"
 EMOJI_AVAILABLE=""
@@ -40,12 +41,12 @@ fetch_token() {
 	read -r TOKEN <$CREDENTIALS_FILE
 }
 
-execute_curl() {
+call_slack_api() {
 	response=$(
 		curl -s -S -X POST \
 			--data token="$TOKEN" \
 			--data-urlencode "$2" \
-			"$1" |
+			"$SLACK_API_URL$1" |
 			sed -n 's/{"ok":false,"error":"\([^"]*\)".*/\1/p'
 	)
 
@@ -57,11 +58,11 @@ execute_curl() {
 
 update_status() {
 	PROFILE="{\"status_emoji\":\"$1\",\"status_text\":\"$2\"}"
-	execute_curl "$USER_PROFILE_ENDPOINT" "profile=$PROFILE"
+	call_slack_api "$SLACK_USER_PROFILE_ENDPOINT" "profile=$PROFILE"
 }
 
 update_donotdisturb() {
-	execute_curl "$DO_NOT_DISTURB_ENDPOINT" "num_minutes=$1"
+	call_slack_api "$SLACK_DO_NOT_DISTURB_ENDPOINT" "num_minutes=$1"
 }
 
 set_mode() {
