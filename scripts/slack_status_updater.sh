@@ -28,6 +28,7 @@ print_usage() {
 	echo
 	echo "Examples:"
 	echo "  $(basename $0) focus 60"
+	echo "  $(basename $0) lunch 30"
 	echo "  $(basename $0) available"
 }
 
