@@ -56,8 +56,23 @@ call_slack_api() {
 	fi
 }
 
+get_unix_timestamp_duration() {
+  if [[ -n "$1" ]] && [[ "$1" =~ ^[0-9]+$ ]] && [[ "$1" != "0" ]]; then
+    current_timestamp=$(date +%s)
+    duration_in_seconds=$(($1 * 60))
+    expiration_timestamp=$((current_timestamp + duration_in_seconds))
+    echo "${expiration_timestamp}"
+  elif [[ "$1" == "0" ]]; then
+    echo "0"
+  else
+    echo "Error: The expiration must be a number representing the duration in minutes."
+    exit 1
+  fi
+}
+
+
 update_status() {
-	PROFILE="{\"status_emoji\":\"$1\",\"status_text\":\"$2\"}"
+  PROFILE="{\"status_emoji\":\"$1\",\"status_text\":\"$2\",\"status_expiration\":\"$3\"}"
 	call_slack_api "$SLACK_USER_PROFILE_ENDPOINT" "profile=$PROFILE"
 }
 
@@ -67,7 +82,8 @@ update_donotdisturb() {
 
 set_mode() {
 	fetch_token
-	update_status $1 $2
+  expiration_in_seconds=$(get_unix_timestamp_duration $3)
+	update_status ${1:-""} ${2:-""} $expiration_in_seconds
 	update_donotdisturb $3
 }
 
