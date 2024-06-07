@@ -9,6 +9,7 @@ export HOMEBREW_NO_AUTO_UPDATE=1
 # Misc.
 alias t='tmux'
 alias v='nvim'
+alias tf='terraform'
 
 # ls
 alias ls='ls --color=auto'
