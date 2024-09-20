@@ -19,6 +19,7 @@ alias ll='ls -la'
 alias sb='cd "$SECOND_BRAIN"'
 alias sbc='$SCRIPTS/createnote.sh coding'
 alias sbo='$SCRIPTS/createnote.sh other'
+alias sbd='cd "$SECOND_BRAIN/coding"'
 
 # pomodoro
 alias pomo='~/.local/bin/pomo'
