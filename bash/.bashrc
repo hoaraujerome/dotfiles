@@ -27,6 +27,11 @@ alias pomo='~/.local/bin/pomo'
 alias k='kubectl'
 
 ## Functions
+# pomodoro
+pos() {
+	pomo start "$1m"
+}
+
 # slack status updater
 lu() {
 	bash $SCRIPTS/slack_status_updater.sh lunch "$1"
