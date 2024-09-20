@@ -11,6 +11,9 @@ brew install jesseduffield/lazygit/lazygit
 # LazyHealth
 brew install gnu-sed
 
+# Markdown extra
+brew install markdownlint-cli2
+
 # https://github.com/nvim-treesitter/nvim-treesitter?tab=readme-ov-file#requirements
 gcc --version
 
