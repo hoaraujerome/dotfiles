@@ -13,6 +13,7 @@ brew install gnu-sed
 
 # Markdown extra
 brew install markdownlint-cli2
+cp .markdownlint-cli2.yaml ~/
 
 # https://github.com/nvim-treesitter/nvim-treesitter?tab=readme-ov-file#requirements
 gcc --version
