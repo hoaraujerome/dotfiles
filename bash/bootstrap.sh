@@ -4,8 +4,10 @@ set -e
 
 brew install starship
 
-cp ~/dotfiles/bash/.bash_profile ~/
+# cp ~/dotfiles/bash/.bash_profile ~/
+# A bash profile exists after installing homebrew
+cat ~/dotfiles/bash/.bash_profile >> ~/.bash_profile
 cp ~/dotfiles/bash/.bashrc ~/
-cp ~/dotfiles/bash/starship.toml ~/.config/
 
-chsh -s /bin/bash $(whoami)
+mkdir ~/.config/
+cp ~/dotfiles/bash/starship.toml ~/.config/

@@ -22,11 +22,17 @@ gcc --version
 brew install ripgrep
 brew install fd
 
+# fzf-lua
+brew install fzf
+
+# luarocks
+brew install luarocks
+
 ##############
 # Installation
 ##############
 rm -Rf ~/.config/nvim.bak || true
-mv ~/.config/nvim{,.bak}
+mv ~/.config/nvim{,.bak} || true
 cp -R ~/dotfiles/lazyvim/nvim ~/.config
 
 echo "Installation done."

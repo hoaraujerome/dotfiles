@@ -1,3 +1,4 @@
+[general]
 # themes from https://github.com/alacritty/alacritty-theme
 import = ["~/dotfiles/alacritty/custom_argonaut.toml"]
 
@@ -15,3 +16,6 @@ decorations = "Full"
 [window.padding]
 x = 7
 y = 20
+
+[terminal]
+shell = { program = "/bin/bash", args = ["--login"] }
