@@ -6,4 +6,4 @@ SECOND_BRAIN_PATH="$HOME/Library/Mobile Documents/iCloud~md~obsidian/Documents/s
 
 mkdir -p "$SECOND_BRAIN_PATH"
 
-git clone git@github.com:hoaraujerome/coding.git "$SECOND_BRAIN_PATH/coding"
+git clone https://github.com/hoaraujerome/coding.git "$SECOND_BRAIN_PATH/coding"
