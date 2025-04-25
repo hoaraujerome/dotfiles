@@ -15,6 +15,10 @@ brew install gnu-sed
 brew install markdownlint-cli2
 cp .markdownlint-cli2.yaml ~/
 
+# Yamlfmt configuration
+mkdir -p ~/.config/yamlfmt
+cp .yamlfmt ~/.config/yamlfmt
+
 # https://github.com/nvim-treesitter/nvim-treesitter?tab=readme-ov-file#requirements
 gcc --version
 
