@@ -13,6 +13,7 @@ return {
     },
     linters_by_ft = {
       hcl = { "terraform_validate" },
+      yaml = { "yamllint" },
     },
   },
 }
