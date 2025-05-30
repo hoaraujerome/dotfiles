@@ -12,6 +12,7 @@ family = "FiraCode Nerd Font Mono"
 [window]
 startup_mode = "Fullscreen"
 decorations = "Full"
+# For https://github.com/LazyVim/LazyVim/discussions/4029
 option_as_alt = "OnlyLeft"
 
 [window.padding]
