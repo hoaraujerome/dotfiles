@@ -47,6 +47,3 @@ av() {
 	pomo stop
 	bash $SCRIPTS/slack_status_updater.sh available
 }
-
-## PROMPT
-eval "$(starship init bash)"
