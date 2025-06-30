@@ -7,6 +7,10 @@ if [ -r ~/.bashrc ]; then
   source ~/.bashrc
 fi
 
+# Load bash-completion
+[[ -r "/opt/homebrew/etc/profile.d/bash_completion.sh" ]] &&
+  source "/opt/homebrew/etc/profile.d/bash_completion.sh"
+
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 ## PROMPT

@@ -26,24 +26,25 @@ alias pomo='~/.local/bin/pomo'
 
 # kubectl
 alias k='kubectl'
+complete -o default -F __start_kubectl k
 
 ## Functions
 # pomodoro
 pos() {
-	pomo start "$1m"
+  pomo start "$1m"
 }
 
 # slack status updater
 lu() {
-	bash $SCRIPTS/slack_status_updater.sh lunch "$1"
+  bash $SCRIPTS/slack_status_updater.sh lunch "$1"
 }
 
 fo() {
-	pomo start "$1m"
-	bash $SCRIPTS/slack_status_updater.sh focus "$1"
+  pomo start "$1m"
+  bash $SCRIPTS/slack_status_updater.sh focus "$1"
 }
 
 av() {
-	pomo stop
-	bash $SCRIPTS/slack_status_updater.sh available
+  pomo stop
+  bash $SCRIPTS/slack_status_updater.sh available
 }
