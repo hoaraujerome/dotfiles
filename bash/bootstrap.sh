@@ -3,6 +3,7 @@
 set -e
 
 brew install starship
+brew install bash-completion
 
 cp ~/dotfiles/bash/.bash_profile ~/
 # A bash profile exists after installing homebrew
