@@ -2,10 +2,11 @@
 
 set -e
 
-brew install jesseduffield/lazygit/lazygit
+brew install lazygit
+brew pin lazygit
 
 brew install --cask zed
 
-cp ~/dotfiles/zed/tasks.json ~/.config/zed/
+cp ~/dotfiles/zed/*.json ~/.config/zed/
 
 # Manually install opencode extension
