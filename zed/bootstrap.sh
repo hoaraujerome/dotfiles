@@ -9,4 +9,9 @@ brew install --cask zed
 
 cp ~/dotfiles/zed/*.json ~/.config/zed/
 
-# Manually install opencode extension
+# Manually install extensions:
+# - opencode
+# - terraform
+
+# Sign in to get code predictions
+# https://zed.dev/docs/ai/edit-prediction#edit-prediction
