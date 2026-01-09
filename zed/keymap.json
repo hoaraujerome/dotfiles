@@ -10,7 +10,8 @@
     "context": "Workspace",
     "bindings": {
       // "shift shift": "file_finder::Toggle"
-      "cmd-g": ["task::Spawn", { "task_name": "start lazygit", "reveal_target": "center" }]
+      "cmd-g": ["task::Spawn", { "task_name": "start lazygit", "reveal_target": "center" }],
+      "cmd-p": ["task::Spawn", { "task_name": "Television File Finder", "reveal_target": "center" }]
     }
   },
   {

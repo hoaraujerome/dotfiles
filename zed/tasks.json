@@ -5,6 +5,13 @@
   {
     "label": "start lazygit",
     "command": "lazygit -p $ZED_WORKTREE_ROOT"
+  },
+  {
+    "label": "Television File Finder",
+    "command": "zed \"$(tv files)\"",
+    "hide": "always",
+    "allow_concurrent_runs": true,
+    "use_new_terminal": true
   }
 ]
 

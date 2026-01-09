@@ -5,6 +5,14 @@ set -e
 brew install lazygit
 brew pin lazygit
 
+# https://zed.dev/blog/hidden-gems-part-2#emulate-vims-telescope-via-television
+brew install ripgrep
+brew pin ripgrep
+brew install bat
+brew pin bat
+brew install television
+brew pin television
+
 brew install --cask zed
 
 cp ~/dotfiles/zed/*.json ~/.config/zed/
