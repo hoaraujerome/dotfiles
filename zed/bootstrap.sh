@@ -19,6 +19,7 @@ cp ~/dotfiles/zed/*.json ~/.config/zed/
 
 # Manually install extensions:
 # - opencode
+# - Makefile
 # - terraform
 # - Terraform Context Server
 
