@@ -18,6 +18,7 @@ brew install --cask zed
 cp ~/dotfiles/zed/*.json ~/.config/zed/
 
 # Manually install extensions:
+# - basher
 # - opencode
 # - Makefile
 # - terraform
