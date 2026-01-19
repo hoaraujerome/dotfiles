@@ -19,5 +19,19 @@
     "bindings": {
       // "j k": "vim::NormalBefore"
     }
+  },
+  {
+    "context": "Pane",
+    "bindings": {
+      // Override existing keybinding for this context
+      "cmd-g": ["task::Spawn", { "task_name": "start lazygit", "reveal_target": "center" }],
+    }
+  },
+  {
+    "context": "ContextEditor > Editor",
+    "bindings": {
+      // Override existing keybinding for this context
+      "cmd-g": ["task::Spawn", { "task_name": "start lazygit", "reveal_target": "center" }],
+    }
   }
 ]
