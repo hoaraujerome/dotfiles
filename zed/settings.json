@@ -6,6 +6,12 @@
 // To see all of Zed's default settings without changing your
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
+// 
+// Centered layout Recommended values for your BenQ RD240Q = 0.22
+// Effective code width ≈ 1434 px
+// * Strongly discourages over-wide lines
+// * Improves diff readability
+// * Reduces eye travel on long sessions
 {
   "preview_tabs": {
     "enabled": false
@@ -33,5 +39,9 @@
   "features": {
     "edit_prediction_provider": "zed"
   },
-  "relative_line_numbers": "enabled"
+  "relative_line_numbers": "enabled",
+  "centered_layout": {
+    "left_padding": 0.22,
+    "right_padding": 0.22
+  }
 }
