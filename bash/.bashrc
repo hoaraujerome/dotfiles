@@ -48,3 +48,6 @@ av() {
   pomo stop
   bash $SCRIPTS/slack_status_updater.sh available
 }
+
+# append history immediately after each command
+PROMPT_COMMAND="history -a; history -n; ${PROMPT_COMMAND}"
