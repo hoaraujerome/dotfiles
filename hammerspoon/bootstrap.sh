@@ -4,6 +4,7 @@ set -e
 
 brew install hammerspoon --cask
 
+mkdir -p ~/.hammerspoon/
 cp ~/dotfiles/hammerspoon/init.lua ~/.hammerspoon
 
 echo "In System Preferences, enable:"
