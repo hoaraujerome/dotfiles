@@ -15,9 +15,9 @@
     }
   },
   {
-    "context": "Editor && vim_mode == insert",
+    "context": "Editor && mode == full",
     "bindings": {
-      // "j k": "vim::NormalBefore"
+      "cmd-f": ["task::Spawn", { "task_name": "Television Text Finder", "reveal_target": "center" }]
     }
   },
   {
