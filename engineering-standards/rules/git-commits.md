@@ -1,0 +1,7 @@
+- Use conventional commits (feat, fix, chore, docs, refactor, test).
+- imperative mood
+- max 72 chars title
+- lowercase type
+- no period at end
+- squash trivial commits before merge
+- Add an `Assisted-by:` (no email) git trailer when AI agents materially contributed to implementation, refactoring, debugging, architecture, or tests. Do not add it for trivial completions or syntax suggestions.
